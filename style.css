@@ -1,0 +1,213 @@
+@charset "utf-8";
+/*
+Theme Name:		David Wiederkehr
+Description:	Theme for David Wiederkehr’s Blog
+Version:			0.1
+Author:				Benjamin Wiederkehr
+Author URI:		http://artillery.ch/
+Domain:				davidwiederkehr.ch
+Start:				2008-01-18
+Last update:	2008-01-18
+Copyright:		Benjamin Wiederkehr for Artillery - graphic craft */
+
+/* Container
+/////////////////////////////////////////////////////////////////*/
+body					{ background: url("images/body_bg.png") 50% 0 no-repeat;}
+#container		{ position: relative; border-top: 5px solid #000;}
+/* Access
+/////////////////////////////////////////////////////////////////*/
+#access				{ position: absolute; right: 5px; top: -3px;}
+#access a			{ padding: 0 3px; }
+#access #smaller_font	{ font-size: 0.833em;}
+#access #larger_font	{ font-size: 1.25em;}
+/* About
+/////////////////////////////////////////////////////////////////*/
+#about				{ }
+#about #accordion_nav				{
+	text-align: right;
+	margin-right: 8.3em; padding: 3px 0;
+	line-height: 1;
+	background: url('images/about_tab.png') 100% 100% no-repeat;
+}
+#about .accordion_headings	{ display: inline; color: #FFF; background: #000;}
+#about .accordion_child			{
+	margin: 0 8.3em 0 0;
+	color: #FFF;
+	background: #000;
+	position: relative;
+}
+#about-content .accordion_child h2,
+#about-content .accordion_child h3{ color: #FFF;}
+#about-content .accordion_child{ padding: 18px 125px;}
+#about-header { padding: 0 3px 0 0;}
+#close-header { position:absolute; right:3px; top:0px;}
+/* Header
+/////////////////////////////////////////////////////////////////*/
+#header				{
+	min-height: 90px;
+	margin-bottom: 1px;
+	border-bottom: 5px solid #000;
+}
+#header h1		{ margin: 18px 0 0 16px; font-size: 6em; font-variant: small-caps;}
+#header h1 a	{ color: #c00;}
+/* Accordion
+/////////////////////////////////////////////////////////////////*/
+#accordion		{ background: #FFF2B5; border-top: 1px solid #000; border-bottom: 1px solid #000;}
+#accordion #accordion_nav		{ position: absolute; left: -62px; margin: -2px 0 0 0;}
+#accordion .accordion_headings	{
+	margin: 1px 0 0 0;
+	padding: 2px 8px 1px 10px;
+	color: #fff;
+	text-align: right;
+	background: url('images/nav_bg.png') 0 0 no-repeat;
+}
+#accordion .header_highlight		{ color: #000; background: url('images/nav_bg.png') 0 100% no-repeat;}
+#accordion #schliessen-header.header_highlight{ color: #fff;background: url('images/nav_bg.png') 0 0 no-repeat;}
+#accordion #accordion_body{ }
+#accordion_body ul				{ margin: 0; list-style: none;}
+#accordion_body a				{ font-weight: bold;}
+#wichtig-content ul,
+#aktuell-content ul				{ padding: 18px 40px;}
+#wichtig-content ul li,
+#aktuell-content ul li		{ float: left; padding-bottom: 18px;}
+.count_1 li								{ width: 830px; margin: 0 0 0 0;}
+.count_2 li								{ width: 380px; margin: 0 50px 0 0;}
+.count_3 li								{ width: 250px; margin: 0 20px 0 0;}
+#wichtig-content ul .last,
+#aktuell-content ul .last	{ margin-right: 0;}
+#wichtig-content ul li span,
+#aktuell-content ul li span	{ margin-bottom: 0;}
+#wichtig-content ul li h3,
+#aktuell-content ul li h3	{ margin-bottom: .5em; font-weight: bold; font-size: 1.1666em;}
+#wichtig-content ul li p,
+#aktuell-content ul li p	{ margin-bottom: 0;}
+#themen-content						{ text-align: center;}
+#themen-content a					{ padding: 0 10px;}
+#archiv-content ul				{ padding: 18px 40px;}
+#archiv-content ul li			{ float: left; width: 260px; text-align: center; margin-bottom: 10px;}
+#suche-content						{ text-align: center;}
+#searchform								{ padding: 18px;}
+
+/* Content
+/////////////////////////////////////////////////////////////////*/
+#content			{ padding: 54px 0 18px; background: url("images/container_bg.png");}
+/* Posts
+/////////////////////////////////////////////////////////////////*/
+#posts				{ }
+/* Entry
+/////////////////////////////////////////////////////////////////*/
+.entry				{ margin: 0 10px 0 20px;}
+.entry_heading{ border-bottom: 3px solid #000; font-weight: bold; text-align: center;}
+.entry_heading h2	{
+	margin-bottom: 0;
+	font-size: 2.25em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.entry_meta		,
+.meta_info		{
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 1px;
+	padding: 5px 0;
+	border-top: 1px solid #000;
+}
+.entry_meta span	{ padding: 0 .5em;}
+.entry_content		{
+	border-top: 2px solid #000;
+	padding: 1em 0 0;
+	margin: 0 0 36px 0;
+	border-bottom: 1px dotted #BBB;
+}
+.entry_content span.tags	{ float: left; text-transform: uppercase; padding: 0 .5em 0 0;}
+.entry_content span.tags a{ font-weight: bold; text-decoration: none;}
+.entry_content p					{ text-indent: 1em; font-size: 1.1666em;}
+.entry_content ul,
+.entry_content ol					{ font-size: 1.1666em;}
+.entry_content img				{ margin-top: 0;}
+.entry_content .entry_lead span,
+.entry_content .entry_lead p	{ font-size: 1.5em;}
+.entry_content .entry_lead img{ float: right; margin: 0 0 0 1.5em;}
+/* Comments
+/////////////////////////////////////////////////////////////////*/
+#comments								{ color: #666; list-style: none inside; margin: 0 0 36px 0; padding: 0;}
+#trackback_link					{ font-size:1.2em; padding:0pt 24px; display: block; text-align: right;}
+#comments li						{
+	padding: 18px 0 0 0;
+	min-height: 72px;
+	background: #F2F2F2;
+	border-bottom: 1px dotted #BBB;
+}
+#comments li:hover,
+#comments li.alt:hover	{ background: #FFFCE0;}
+#comments_heading				{ border-top: 3px solid #000; padding: 0;}
+#comments_heading	h3{
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	font-size: 1em; line-height: 1.5;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 1px;
+	padding: 5px 0;
+	border-top: 1px solid #000;
+	border-bottom: 2px solid #000;
+}
+.comment_heading		{ width: 190px; float: left;}
+.comment_heading h4	{
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.25;
+	text-transform: capitalize;
+	padding: 0 0 0 10px;
+	margin: 0;
+}
+.comment_meta				{
+	padding: 0 0 0 10px;
+	font-size: 0.833em;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	text-transform: uppercase;
+}
+.comment_content		{ width: 390px; margin: 0 0 0 200px;}
+.comment_content p	{ margin: 0; padding: 3px 0 18px 0;}
+#comments li.alt		{ background: #FFF;}
+#comment_labels			{ width: 250px; float: left;}
+#comments_form p		{ padding: 7px 2px 0 0; text-align: right;}
+/* Page Navigation
+/////////////////////////////////////////////////////////////////*/
+#page_nav { display: block; text-align: center; margin: 0 10px 0 20px;}
+#page_nav div a						{ font-weight: bold;}
+#page_nav div.alignleft		{ float: left;}
+#page_nav div.alignright	{ float: right;}
+/* Sidebar
+/////////////////////////////////////////////////////////////////*/
+#sidebar			{ margin-top: 59px;}
+#sidebar h2,
+#sidebar caption {
+	font-size: 1.1666em;
+	color: #fff;
+	padding: 0 .5em;
+	background: #c00;
+}
+#sidebar td				{ text-align: center;}
+#sidebar td#next	{ text-align: right; padding-right: 0;}
+#sidebar td#prev	{ text-align: left;}
+#sidebar td:hover	{ background: #FFFCE0;}
+#sidebar td#today	{ color: #c00;}
+#sidebar tfoot td	{ border-top:1px solid #BBB;}
+#sidebar a		{ font-weight: bold;}
+#sidebar h3		{ font-size: 1.1666em ;margin-bottom:0.5em; font-weight: bold;}
+#sidebar ul								{ margin: 0 20px 0 0; list-style: none;}
+#sidebar ul li ul					{ margin: 0 0 36px; line-height: 1.75;}
+#sidebar ul li ul li			{ border-bottom: 1px dotted #BBB;}
+#sidebar ul li ul li:hover{ background: #FFFCE0;}
+#sidebar ul li ul li a		{ text-decoration: none; display: block;}
+/* Footer
+/////////////////////////////////////////////////////////////////*/
+#footer		{
+	clear: both;
+	padding: 0 10px;
+	background: url("images/container_bg.png");
+	border-bottom: 1px solid #E8E8E8;
+}
+#footer p		{ padding: 18px 0 0 0; border-top: 1px dotted #BBB;}
+#footer img	{ margin: 0 .2em; float: none;}
